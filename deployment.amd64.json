@@ -47,7 +47,7 @@
             "restartPolicy": "always",
             "settings": {
               "image": "csharpmodule-dev:latest",
-              "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"4022/tcp\":[{\"HostPort\":\"4022\"}]},\"Binds\":[\"c:/Users/rentu.FAREAST/Desktop/VCEdge/csharpremote/IotEdgeModule1/out:c:/app\"]}}"
+              "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"4022/tcp\":[{\"HostPort\":\"4022\"}]}}}"
             }
           }
         }

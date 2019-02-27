@@ -6,7 +6,6 @@ ARG VS_OUT_DIR
 
 ADD $VS_REMOTE_DEBUGGER_PATH "c:\windows"
 
-VOLUME c:\app
 WORKDIR c:\app
-
+ADD .\out .
 ENTRYPOINT start /B msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:36000 && dotnet IotEdgeModule1.dll
